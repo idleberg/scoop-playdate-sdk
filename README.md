@@ -2,9 +2,9 @@
 
 > A Scoop bucket to install the Playdate SDK.
 
-[![License](https://flat.badgen.net/github/license/idleberg/scoop-playdate-sdk)](LICENSE)
-[![Version](https://flat.badgen.net/github/release/idleberg/scoop-playdate-sdk)](https://github.com/idleberg/scoop-playdate-sdk/releases)
-[![Status](https://flat.badgen.net/github/checks/idleberg/scoop-playdate-sdk/?label=build)](https://github.com/idleberg/scoop-playdate-sdk/actions)
+[![License](https://img.shields.io/github/license/idleberg/scoop-playdate-sdk?style=for-the-badge)](LICENSE)
+[![Version](https://img.shields.io/github/v/tag/idleberg/scoop-playdate-sdk?style=for-the-badge)](https://github.com/idleberg/scoop-playdate-sdk/releases)
+[![Build](https://img.shields.io/github/workflow/status/idleberg/scoop-playdate-sdk/test?style=for-the-badge)](https://github.com/idleberg/scoop-playdate-sdk/releases)
 
 ## Usage
 
