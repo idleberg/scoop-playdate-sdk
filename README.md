@@ -12,7 +12,7 @@ After adding the bucket, you can install the Playdate SDK like you would any oth
 
 ```powershell
 # Add SDK bucket
-scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk.git
+scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk
 
 # Add extras bucket (the SDK depends on Visual C++ Redistributable)
 scoop bucket add extras
@@ -34,7 +34,7 @@ ERROR Couldn't remove '~\scoop\apps\playdate-sdk\1.12.0'; it may be in use.
 While the uninstaller will be deleted after rebooting your computer, Scoop will still list the Playdate SDK as a failed installation. To fix this, you can delete the empty directory:
 
 ```powershell
-Remove-Item $env:USERPROFILE/scoop/apps/playdate-sdk
+Remove-Item $env:USERPROFILE\scoop\apps\playdate-sdk
 ```
 
 ## License
