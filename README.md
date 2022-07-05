@@ -20,17 +20,6 @@ scoop install playdate-sdk
 
 :warning: You might need an elevated shell to install/uninstall the SDK
 
-## Issues
-
-There's a known issue when uninstalling the software, Scoop might not be able to delete the SDK's uninstaller and you will end up with an error like the following:
-
-
-```
-ERROR Couldn't remove '~\scoop\apps\playdate-sdk\1.12.0'; it may be in use.
-```
-
-While the uninstaller will be deleted after rebooting your computer, Scoop will still list the Playdate SDK as a failed installation.
-
 ## License
 
 This work is licensed under [The MIT License](LICENSE).
