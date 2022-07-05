@@ -18,7 +18,7 @@ scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk.git
 scoop install playdate-sdk
 ```
 
-:warning: You might need an elevated shell to install/uninstall the SDK
+:warning: You might need an elevated shell to install/uninstall the SDK, e.g. using [`sudo`](http://blog.lukesampson.com/sudo-for-windows)
 
 ## License
 
