@@ -19,16 +19,25 @@
         "bin/pdc.exe",
         "bin/pdutil.exe"
     ],
+    "depends": [
+        "extras/vcredist2013"
+    ],
+    "env_set": {
+        "PLAYDATE_SDK_PATH": "$dir"
+    },
     "installer":  {
         "args": [
             "/S",
             "/D=$dir"
         ]
     },
-    "depends": [
-        "extras/vcredist2013"
-    ],
-    "env_set": {
-        "PLAYDATE_SDK_PATH": "$dir"
-    }
+    "uninstaller": {
+        "file": "Uninstall_Playdate_SDK.exe"
+    },
+    "shortcuts": [
+        [
+            "bin/PlaydateSimulator.exe",
+            "Playdate Simulator"
+        ]
+    ]
 }
