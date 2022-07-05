@@ -5,11 +5,8 @@ on:
 
 jobs:
   test-run:
-    strategy:
-      matrix:
-        os: [windows-latest]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
