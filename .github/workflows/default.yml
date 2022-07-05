@@ -1,0 +1,38 @@
+name: test
+
+on:
+  push
+
+jobs:
+  test-run:
+    strategy:
+      matrix:
+        os: [windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup & run tests
+      shell: pwsh
+      run: |
+        # Install Scoop
+        iwr -useb get.scoop.sh -outfile 'install.ps1'
+        .\install.ps1 -RunAsAdmin
+
+        # Install additional buckets
+        scoop bucket add extras
+        scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk
+        
+        # Install Playdate SDK
+        scoop install playdate-sdk
+
+        # Test environmental variable
+        if (-not (Test-Path env:PLAYDATE_SDK_PATH)) {
+          Write-Error "env:PLAYDATE_SDK_PATH is not set"
+          exit 1
+        }
+
+        # Print version
+        pdc --version
