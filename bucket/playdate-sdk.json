@@ -34,11 +34,5 @@
     "uninstaller": {
         "file": "Uninstall_Playdate_SDK.exe",
         "args": "/S"
-    },
-    "shortcuts": [
-        [
-            "bin/PlaydateSimulator.exe",
-            "Playdate Simulator"
-        ]
-    ]
+    }
 }
