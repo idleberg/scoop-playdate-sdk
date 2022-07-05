@@ -11,7 +11,7 @@
 Add this repository to your buckets:
 
 ```powershell
-scoop bucket add extras https://github.com/idleberg/scoop-playdate-sdk.git
+scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk.git
 ```
 
 You can now install the Playdate SDK using `scoop install playdate-sdk`.
