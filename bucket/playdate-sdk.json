@@ -1,6 +1,9 @@
 {
     "version":  "1.12.0",
-    "license":  "https://play.date/dev/sdk-license",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://play.date/dev/sdk-license"
+    },
     "url":  "https://download.panic.com/playdate_sdk/Windows/PlaydateSDK-1.12.0.exe",
     "homepage":  "https://play.date/dev/",
     "hash": [
