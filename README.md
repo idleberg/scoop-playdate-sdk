@@ -11,8 +11,11 @@
 After adding the bucket, you can install the Playdate SDK like you would any other software in Scoop:
 
 ```powershell
-# Add bucket
+# Add SDK bucket
 scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk.git
+
+# Add extras bucket to install Visual C++ Redistributable dependency
+scoop bucket add extras
 
 # Install SDK
 scoop install playdate-sdk
