@@ -32,7 +32,8 @@
         ]
     },
     "uninstaller": {
-        "file": "Uninstall_Playdate_SDK.exe"
+        "file": "Uninstall_Playdate_SDK.exe",
+        "args": "/S"
     },
     "shortcuts": [
         [
