@@ -16,6 +16,8 @@ scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk.git
 
 You can now install the Playdate SDK using `scoop install playdate-sdk`.
 
+:warning: You might need an elevated shell to install/uninstall the SDK
+
 ## License
 
 This work is licensed under [The MIT License](LICENSE).
