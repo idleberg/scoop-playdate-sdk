@@ -8,15 +8,28 @@
 
 ## Usage
 
-Add this repository to your buckets:
+After adding the bucket, you can install the Playdate SDK like you would any other software in Scoop:
 
 ```powershell
+# Add bucket
 scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk.git
+
+# Install SDK
+scoop install playdate-sdk
 ```
 
-You can now install the Playdate SDK using `scoop install playdate-sdk`.
-
 :warning: You might need an elevated shell to install/uninstall the SDK
+
+## Issues
+
+There's a known issue when uninstalling the software, Scoop might not be able to delete the SDK's uninstaller and you will end up with an error like the following:
+
+
+```
+ERROR Couldn't remove '~\scoop\apps\playdate-sdk\1.12.0'; it may be in use.
+```
+
+While the uninstaller will be deleted after rebooting your computer, Scoop will still list the Playdate SDK as a failed installation.
 
 ## License
 
