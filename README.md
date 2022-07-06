@@ -21,7 +21,7 @@ scoop bucket add extras
 sudo scoop install playdate-sdk
 ```
 
-:warning: You might need an elevated shell to install/uninstall the SDK, e.g. using [Sudo for Windows](http://blog.lukesampson.com/sudo-for-windows)
+:warning: You might need an elevated shell to install/uninstall the SDK, e.g. using [`sudo`](http://blog.lukesampson.com/sudo-for-windows)
 
 ## Issues
 
