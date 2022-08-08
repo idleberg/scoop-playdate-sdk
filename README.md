@@ -14,14 +14,12 @@ After adding the bucket, you can install the Playdate SDK like you would any oth
 # Add SDK bucket
 scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk
 
-# Add extras bucket (the SDK depends on Visual C++ Redistributable)
-scoop bucket add extras
+# Optional: Install sudo helper to elevate PowerShell
+scoop install sudo
 
 # Install SDK
 sudo scoop install playdate-sdk
 ```
-
-:warning: You might need an elevated shell to install/uninstall the SDK, e.g. using [`sudo`](http://blog.lukesampson.com/sudo-for-windows)
 
 ## Issues
 
