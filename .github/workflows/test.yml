@@ -41,7 +41,7 @@ jobs:
         {
           if (Test-Path -Path (Join-Path -Path $file.FullName -ChildPath "Source/main.lua"))
           {
-            Write-Host "Compiling $file.FullName"
+            Write-Host "Compiling $file..."
             pdc (Join-Path -Path $file.FullName -ChildPath Source) --no-compress
           }
         }
