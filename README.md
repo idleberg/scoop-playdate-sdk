@@ -21,6 +21,8 @@ scoop install sudo
 sudo scoop install playdate-sdk
 ```
 
+:warning: You might need an elevated shell to install/uninstall the SDK
+
 ## Issues
 
 Occasionally, Scoop might not be able to delete Playdate SDK's install folder and you will end up with an error like the following:
