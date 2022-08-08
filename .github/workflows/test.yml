@@ -19,6 +19,7 @@ jobs:
         .\install.ps1 -RunAsAdmin
 
         # Install additional buckets
+        scoop update
         scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk
 
         # Install Playdate SDK
