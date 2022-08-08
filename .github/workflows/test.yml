@@ -19,8 +19,10 @@ jobs:
         .\install.ps1 -RunAsAdmin
 
         # Install additional buckets
-        scoop update
         scoop bucket add playdate-sdk https://github.com/idleberg/scoop-playdate-sdk
+
+        # Update Scoop
+        scoop update
 
         # Install Playdate SDK
         scoop install playdate-sdk
@@ -37,7 +39,7 @@ jobs:
         # Compile examples
         foreach ($file in Get-ChildItem $env:PLAYDATE_SDK_PATH/Examples)
         {
-          if (Test-Path -Path "$file.FullName/Source/main.lua")
+          if (Test-Path -Path (Join-Path -Path $file.FullName -ChildPath Source/main.lua))
           {
             pdc $file.FullName --no-compress Source
           }
