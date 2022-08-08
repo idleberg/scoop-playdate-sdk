@@ -19,9 +19,6 @@
         "bin/pdc.exe",
         "bin/pdutil.exe"
     ],
-    "depends": [
-        "extras/vcredist2013"
-    ],
     "env_set": {
         "PLAYDATE_SDK_PATH": "$dir"
     },
