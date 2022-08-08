@@ -37,7 +37,7 @@ jobs:
         # Compile examples
         foreach ($file in Get-ChildItem $env:PLAYDATE_SDK_PATH/Examples)
         {
-          if (Test-Path -Path $file.FullName/Source/main.lua)
+          if (Test-Path -Path "$file.FullName/Source/main.lua")
           {
             pdc $file.FullName --no-compress Source
           }
