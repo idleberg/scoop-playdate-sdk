@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/github/license/idleberg/scoop-playdate-sdk?style=for-the-badge)](LICENSE)
 [![Version](https://img.shields.io/github/v/release/idleberg/scoop-playdate-sdk?style=for-the-badge)](https://github.com/idleberg/scoop-playdate-sdk/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/scoop-playdate-sdk/test?style=for-the-badge)](https://github.com/idleberg/scoop-playdate-sdk/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/scoop-playdate-sdk/test.yml?style=for-the-badge)](https://github.com/idleberg/scoop-playdate-sdk/releases)
 
 ## Usage
 
@@ -28,7 +28,7 @@ sudo scoop install playdate-sdk
 Occasionally, Scoop might not be able to delete Playdate SDK's install folder and you will end up with an error like the following:
 
 ```
-ERROR Couldn't remove '~\scoop\apps\playdate-sdk\1.12.0'; it may be in use.
+ERROR Couldn't remove '~\scoop\apps\playdate-sdk\1.11.1'; it may be in use.
 ```
 
 While the install folder is usually empty, Scoop will still list the Playdate SDK as a failed installation. To fix this, you can delete the folder manually.
