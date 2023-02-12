@@ -1,7 +1,14 @@
 name: test
 
 on:
-  push
+  push:
+    paths:
+    - '.github/workflows/**/*'
+    - 'playdate-sdk.json'
+  pull_request:
+    paths:
+    - '.github/workflows/**/*'
+    - 'playdate-sdk.json'
 
 jobs:
   test-run:
