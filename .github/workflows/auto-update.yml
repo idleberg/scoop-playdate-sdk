@@ -41,15 +41,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --strict-peer-dependencies
 
-      - name: Build
+      - name: Automatic Update
         run: node tools/auto-update.mjs
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true
 
       - name: Push latest version
         uses: GuillaumeFalourd/git-commit-push@v1.3
