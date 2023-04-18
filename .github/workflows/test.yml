@@ -3,11 +3,11 @@ name: test
 on:
   push:
     paths:
-    - '.github/workflows/**/*'
+    - '.github/workflows/test.yml'
     - 'playdate-sdk.json'
   pull_request:
     paths:
-    - '.github/workflows/**/*'
+    - '.github/workflows/test.yml'
     - 'playdate-sdk.json'
 
 jobs:
