@@ -1,11 +1,9 @@
 name: auto-update
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -41,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --strict-peer-dependencies
 
-      - name: Automatic Update
+      - name: Automatic update
         run: node tools/auto-update.mjs
 
       - name: Push latest version
