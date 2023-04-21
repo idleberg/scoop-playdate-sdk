@@ -37,6 +37,10 @@ While the install folder is usually empty, Scoop will still list the Playdate SD
 Remove-Item ~\scoop\apps\playdate-sdk
 ```
 
+## Related
+
+[Playdate SDK Feed](https://github.com/idleberg/playdate-sdk-feed)
+
 ## License
 
 This work is licensed under [The MIT License](LICENSE).
