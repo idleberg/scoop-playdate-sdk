@@ -39,7 +39,8 @@ Remove-Item ~\scoop\apps\playdate-sdk
 
 ## Related
 
-[Playdate SDK Feed](https://github.com/idleberg/playdate-sdk-feed)
+- [Playdate SDK Feed](https://github.com/idleberg/playdate-sdk-feed)
+- [More package managers](https://gist.github.com/idleberg/e246f7a582ac173d156c60ec23ce2af0)
 
 ## License
 
