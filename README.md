@@ -43,6 +43,9 @@ While the mentioned install folder is usually empty, Scoop will still list it as
 
 ```powershell
 Remove-Item ~\scoop\apps\playdate-sdk
+
+# Beta versions
+Remove-Item ~\scoop\apps\playdate-sdk-beta
 ```
 
 ## Related
