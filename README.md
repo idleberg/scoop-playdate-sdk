@@ -23,6 +23,14 @@ sudo scoop install playdate-sdk
 
 :warning: You might need an elevated shell to install/uninstall the SDK, similar to the example above
 
+## Beta Versions
+
+This bucket also allows installing beta versions of the SDK.
+
+```powershell
+sudo scoop install playdate-sdk-beta
+```
+
 ## Known Issues
 
 Occasionally, Scoop might not be able to delete Playdate SDK's install folder and you will end up with an error similar to this:
