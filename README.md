@@ -25,17 +25,22 @@ sudo scoop install playdate-sdk
 
 ## Known Issues
 
-Occasionally, Scoop might not be able to delete Playdate SDK's install folder and you will end up with an error like the following:
+Occasionally, Scoop might not be able to delete Playdate SDK's install folder and you will end up with an error similar to this:
 
 ```
 ERROR Couldn't remove '~\scoop\apps\playdate-sdk\1.11.1'; it may be in use.
 ```
 
-While the install folder is usually empty, Scoop will still list the Playdate SDK as a failed installation. To fix this, you can delete the folder manually.
+While the mentioned install folder is usually empty, Scoop will still list it as a failed installation. To fix this, you can delete the folder manually.
 
 ```powershell
 Remove-Item ~\scoop\apps\playdate-sdk
 ```
+
+## Related
+
+- [Playdate SDK Feed](https://github.com/idleberg/playdate-sdk-feed)
+- [More package managers](https://gist.github.com/idleberg/e246f7a582ac173d156c60ec23ce2af0)
 
 ## License
 
