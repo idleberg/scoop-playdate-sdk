@@ -1,6 +1,6 @@
 # scoop-playdate-sdk
 
-> A Scoop bucket to install the Playdate SDK.
+> A [Scoop](https://scoop.sh/) bucket to install the Playdate SDK.
 
 [![License](https://img.shields.io/github/license/idleberg/scoop-playdate-sdk?style=for-the-badge)](LICENSE)
 [![Version](https://img.shields.io/github/v/release/idleberg/scoop-playdate-sdk?style=for-the-badge)](https://github.com/idleberg/scoop-playdate-sdk/releases)
