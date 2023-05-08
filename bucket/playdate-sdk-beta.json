@@ -4,7 +4,7 @@
         "identifier": "Proprietary",
         "url": "https://play.date/dev/sdk-license"
     },
-    "url": "https://download.panic.com/playdate_sdk/Windows/PlaydateSDK-2.0.0-beta.2.exe",
+    "url": "https://beta.panic.com/playdate/2.0.0-beta.2/PlaydateSDK-2.0.0-beta.2.exe",
     "homepage": "https://play.date/dev/",
     "hash": [
         "sha1:2582044e9dadb92656e5ec598c46e77821b1f008",
