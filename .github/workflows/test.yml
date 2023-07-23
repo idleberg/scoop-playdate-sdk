@@ -4,11 +4,12 @@ on:
   push:
     paths:
     - '.github/workflows/test.yml'
-    - 'playdate-sdk.json'
+    - 'bucket/*.json'
   pull_request:
     paths:
     - '.github/workflows/test.yml'
-    - 'playdate-sdk.json'
+    - 'bucket/*.json'
+  workflow_dispatch:
 
 jobs:
   test-run:
