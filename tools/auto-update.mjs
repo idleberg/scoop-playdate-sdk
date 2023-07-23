@@ -88,6 +88,8 @@ async function writeBucketJson(data) {
     }, null, 4);
 
     const outPath = resolve(process.cwd(), 'bucket/playdate-sdk.json');
-
     await fs.writeFile(outPath, bucketJSON, 'utf8');
+
+    const versionedOutPath = resolve(process.cwd(), `bucket/playdate-sdk-${data.version}.json`);
+    await fs.writeFile(versionedOutPath, bucketJSON, 'utf8');
 }
