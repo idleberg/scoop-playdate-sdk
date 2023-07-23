@@ -1,15 +1,15 @@
 {
-    "version": "2.0.1",
+    "version": "1.11.0",
     "license": {
         "identifier": "Proprietary",
         "url": "https://play.date/dev/sdk-license"
     },
-    "url": "https://download.panic.com/playdate_sdk/Windows/PlaydateSDK-2.0.1.exe",
+    "url": "https://download.panic.com/playdate_sdk/Windows/PlaydateSDK-1.11.0.exe",
     "homepage": "https://play.date/dev/",
     "hash": [
-        "sha1:961cbede1492b636e51d3caa214784e06b63f00b",
-        "sha256:e630affad13651a2f3ce114c7a11afa6dab6d63bcae1a62cf2adccef8d0e4e9c",
-        "sha512:66aaced4a7a8e6140493568feb7354cb9e4ce99b6df326bab808cbc2713544e46518ba5699c4130001668b60ab01ad5d05f81da99a40db4708554ebd2c785f4b"
+        "sha1:e0354ed9ae1c62e9ff8151e0ba70f999b2f40b81",
+        "sha256:759381c7e8743135f05311bedc3a0af0c212782d967041bbea5e42d05be29990",
+        "sha512:e3cb9fdd2c82b2b48b6a15326a4503ab312019941c7d375b57930a4b1bc9ccf726c5448158d7676b78832cc938688fd07cf8e5e882f7fb6d4b1b80ecf908b5bb"
     ],
     "checkver": {
         "url": "https://play.date/dev/",

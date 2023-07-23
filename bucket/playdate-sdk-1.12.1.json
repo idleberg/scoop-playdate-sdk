@@ -1,15 +1,15 @@
 {
-    "version": "2.0.1",
+    "version":  "1.12.1",
     "license": {
         "identifier": "Proprietary",
         "url": "https://play.date/dev/sdk-license"
     },
-    "url": "https://download.panic.com/playdate_sdk/Windows/PlaydateSDK-2.0.1.exe",
-    "homepage": "https://play.date/dev/",
+    "url":  "https://download.panic.com/playdate_sdk/Windows/PlaydateSDK-1.12.1.exe",
+    "homepage":  "https://play.date/dev/",
     "hash": [
-        "sha1:961cbede1492b636e51d3caa214784e06b63f00b",
-        "sha256:e630affad13651a2f3ce114c7a11afa6dab6d63bcae1a62cf2adccef8d0e4e9c",
-        "sha512:66aaced4a7a8e6140493568feb7354cb9e4ce99b6df326bab808cbc2713544e46518ba5699c4130001668b60ab01ad5d05f81da99a40db4708554ebd2c785f4b"
+        "sha1:c3a2f0a0e4a65feb0c00fe5dcd6669b0d736228c",
+        "sha256:bf84f6e1685b284c9c25db8d9c4e77a3a6f1456ea51b75712dde313e54801e18",
+        "sha512:17038e50b23d36bbdac1d0f937bb1422b44a2081fbabc90b08c391652303cba66c45c240e5560dfc872063099eb0b2b4ffdeac440581a5d9f1bff2af2f3769b7"
     ],
     "checkver": {
         "url": "https://play.date/dev/",
@@ -22,7 +22,7 @@
     "env_set": {
         "PLAYDATE_SDK_PATH": "$dir"
     },
-    "installer": {
+    "installer":  {
         "args": [
             "/S",
             "/D=$dir"
