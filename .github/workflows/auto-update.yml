@@ -9,48 +9,33 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
         with:
-          node-version: 'lts/*'
+          fetch-depth: 1
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        id: pnpm-install
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@a1800f471a0bc25cddac36bb13e6f436ddf341d7 # v1
         with:
-          version: 7
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          bun-version: latest
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --strict-peer-dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build Source
+        run: bun run build
 
       - name: Automatic update
-        run: node tools/auto-update.mjs
+        run: bun tools/auto-update.mjs
 
       - name: Push latest version
-        uses: GuillaumeFalourd/git-commit-push@v1.3
+        uses: GuillaumeFalourd/git-commit-push@205c043bca2f932f7a48a28a8d619ba30eb84baf # v1.3
         with:
           name: "auto-update"
           commit_message: "automatic update"
           files: "bucket/playdate-sdk.json"
 
       - name: Keep workflow alive
-        uses: gautamkrishnar/keepalive-workflow@v1
+        uses: gautamkrishnar/keepalive-workflow@790c7f09285a59b09bb578c85e271c6ff2af97c4 # v1.1.0
         with:
           commit_message: "keep alive"
           committer_username: "GitHub Action"
