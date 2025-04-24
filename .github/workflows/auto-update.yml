@@ -9,12 +9,12 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
       - name: Setup Bun
-        uses: oven-sh/setup-bun@a1800f471a0bc25cddac36bb13e6f436ddf341d7 # v1
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
@@ -30,10 +30,3 @@ jobs:
           name: "auto-update"
           commit_message: "automatic update"
           files: "bucket/playdate-sdk.json"
-
-      - uses: gautamkrishnar/keepalive-workflow@05456e7809058d586d96392e99217726ccc10076 # v2.0.5
-        with:
-          commit_message: "keep alive"
-          committer_username: "GitHub Action"
-          committer_email: "action@users.noreply.github.com"
-          gh_token: "${{ secrets.GITHUB_TOKEN }}"
